@@ -6,6 +6,9 @@ usage() {
   echo "Uses Grafana Alloy to lint the generated configuration"
 }
 
+# Defines a function usage() to display instructions when the user needs help.
+# It explains how to use the script: you can pass one or more .alloy configuration files as arguments.
+
 # check to see if alloy is installed
 if [[ "$(command -v alloy || true)" = "" ]]; then
   echo "Error: alloy is required if running lint locally, see: (https://grafana.com/docs/alloy/latest/) or run: brew install grafana-alloy";
