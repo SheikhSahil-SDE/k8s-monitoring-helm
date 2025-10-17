@@ -15,6 +15,9 @@ if [[ "$(command -v alloy || true)" = "" ]]; then
   exit 1
 fi
 
+# This ensures that the Alloy binary is installed and available in the user’s PATH.
+# If not found, it prints an error message with installation instructions and exits.
+
 # Initialize a flag variable
 STABILITY_LEVEL=generally-available
 
